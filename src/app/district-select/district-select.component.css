@@ -1,0 +1,19 @@
+.align-mid {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.tab_width {
+  width: 33.33%;
+}
+
+::ng-deep .mat-select-trigger {
+  min-width: 70%;
+}
+
+::ng-deep .mat-select-panel {
+  max-height: 70% !important;
+}

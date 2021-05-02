@@ -1,0 +1,20 @@
+<mat-form-field appearance="fill" class="align-mid">
+  <mat-label>Select District</mat-label>
+  <mat-select (selectionChange)="onDistrictSelect($event.value)">
+    <mat-option *ngFor="let district of districts" [value]="district">
+      {{ district }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-tab-group class="align-mid">
+  <mat-tab
+    class="tab_width"
+    label="{{ x }}"
+    *ngFor="let x of ['Medicine', 'Plasma/Blood', 'Third']"
+  >
+    Content 1
+  </mat-tab>
+</mat-tab-group>
+
+{{ selectedDistrict }}
